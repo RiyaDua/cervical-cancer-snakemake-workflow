@@ -80,9 +80,9 @@ results/volcano_plot.pdf
 ```
 
 ### Key Notes
-- I used an Intel-based environment (snakemake_r_env) on an ARM Mac via Rosetta to ensure Bioconductor compatibility.
+- I used an Intel-based environment (snakemake_env) on an ARM Mac via Rosetta to ensure Bioconductor compatibility.
 
-- The pipeline automates my original NGS cervical cancer pipeline using Snakemake for reproducibility.
+- The pipeline automates my original NGS cervical cancer pipeline using Snakemake for reproducibility.(Link to original ngs pipeline: (Link)[https://github.com/RiyaDua/Cervical_cancer_ngs_pipeline]
 
 - This setup can be easily adapted to analyze other GEO datasets by updating the geo_id in config.yaml.
 
