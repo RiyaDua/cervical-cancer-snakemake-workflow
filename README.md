@@ -19,6 +19,7 @@ Fetches and preprocesses data from a GEO Series (GSE ID).
 To ensure compatibility with Bioconductor packages on an Apple Silicon (ARM) Mac, we created a Rosetta-based Intel environment:
 
 #### 1️ Create an Intel-based conda environment (snakemake_r_env)
+```code
 conda create -n snakemake_r_env -c conda-forge -c bioconda \
   r-base=4.2 \
   bioconductor-limma \
@@ -26,9 +27,12 @@ conda create -n snakemake_r_env -c conda-forge -c bioconda \
   bioconductor-deseq2 \
   r-tidyr r-dplyr r-ggplot2 r-pheatmap \
   snakemake
+```
 
 #### 2️ Activate the environment
+```code
 conda activate snakemake_r_env
+```
 
 ### Project Structure
 ```text
@@ -58,8 +62,9 @@ cd /path/to/snakemake_gene_expr
 conda activate snakemake_r_env
 ```
 ## Run the entire workflow
+```code
 snakemake --cores 1 --use-conda
-
+```
 
 ### This will:
 
@@ -69,10 +74,10 @@ snakemake --cores 1 --use-conda
 -   Create a volcano plot of the results
 
 ### Final results:
-
+```code
 results/differential_expression_results.csv
 results/volcano_plot.pdf
-
+```
 
 ### Key Notes
 - I used an Intel-based environment (snakemake_r_env) on an ARM Mac via Rosetta to ensure Bioconductor compatibility.
