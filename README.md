@@ -87,6 +87,6 @@ results/volcano_plot.pdf
 - This setup can be easily adapted to analyze other GEO datasets by updating the geo_id in config.yaml.
 
 ## Author
-Riya Dua
-Master’s in Bioinformatics, Johns Hopkins University
-Driven to integrate clinical informatics and multi-omics pipelines for cancer research!
+Riya Dua  
+Master’s in Bioinformatics, Johns Hopkins University  
+Driven to integrate clinical informatics and multi-omics pipelines for cancer research!  
