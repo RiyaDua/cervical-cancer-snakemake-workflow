@@ -20,7 +20,7 @@ To ensure compatibility with Bioconductor packages on an Apple Silicon (ARM) Mac
 
 #### 1️ Create an Intel-based conda environment (snakemake_r_env)
 ```code
-conda create -n snakemake_r_env -c conda-forge -c bioconda \
+conda create -n snakemake_env -c conda-forge -c bioconda \
   r-base=4.2 \
   bioconductor-limma \
   bioconductor-geoquery \
@@ -31,7 +31,7 @@ conda create -n snakemake_r_env -c conda-forge -c bioconda \
 
 #### 2️ Activate the environment
 ```code
-conda activate snakemake_r_env
+conda activate snakemake_env
 ```
 
 ### Project Structure
@@ -59,7 +59,7 @@ Make sure you’re in the project directory and the environment is activated:
 
 ```code
 cd /path/to/snakemake_gene_expr
-conda activate snakemake_r_env
+conda activate snakemake_env
 ```
 ## Run the entire workflow
 ```code
