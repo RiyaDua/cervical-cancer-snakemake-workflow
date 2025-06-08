@@ -31,7 +31,18 @@ conda create -n snakemake_r_env -c conda-forge -c bioconda \
 conda activate snakemake_r_env
 
 ### Project Structure
+```text
+snakemake_gene_expr/
+├── data/                      # Processed data and sample metadata
+├── results/                   # Differential expression results and volcano plot
+├── scripts/                   # R scripts for each analysis step
+│   ├── preprocessing.R
+│   └── differential_expression.R
+├── Snakefile                  # Snakemake workflow
+├── config.yaml                # Configurable parameters ( GEO ID, min count)
+└── README.md                  # This file
 
+```
 
 ### Configuration
 Edit config.yaml to set your dataset and preprocessing thresholds:
