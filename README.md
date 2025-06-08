@@ -46,16 +46,17 @@ snakemake_gene_expr/
 
 ### Configuration
 Edit config.yaml to set your dataset and preprocessing thresholds:
-
+```text
 geo_id: "GSE63678"
 min_count: 10
-
+```
 ### How to Run
 Make sure you’re in the project directory and the environment is activated:
 
+```code
 cd /path/to/snakemake_gene_expr
 conda activate snakemake_r_env
-
+```
 ## Run the entire workflow
 snakemake --cores 1 --use-conda
 
